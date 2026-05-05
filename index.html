@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Message for You</title>
+    <title>A Message for Eve</title>
     <style>
         :root {
-            --bg-color: #fffafb; /* Soft warm white */
+            --bg-color: #fffafb; 
             --text-main: #4a4a4a;
-            --accent: #d1a7a7; /* Dusty rose accent */
+            --accent: #d1a7a7; 
         }
 
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Georgia', serif; /* Serif font feels more like a letter */
+            font-family: 'Georgia', serif; 
             background-color: var(--bg-color);
             display: flex;
             justify-content: center;
@@ -22,7 +22,6 @@
             min-height: 100vh;
         }
 
-        /* Entrance Animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -31,9 +30,9 @@
         .letter-card {
             background: white;
             padding: 50px;
-            max-width: 500px;
+            max-width: 550px; /* Slightly wider for better reading flow */
             width: 90%;
-            border-radius: 2px;
+            border-radius: 4px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             animation: fadeIn 1.2s ease-out forwards;
             position: relative;
@@ -56,11 +55,13 @@
             letter-spacing: 1px;
         }
 
+        /* This ensures every paragraph looks EXACTLY the same */
         p {
             color: var(--text-main);
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin: 0 0 20px 0; /* Uniform bottom spacing */
             font-size: 17px;
+            text-align: left;
         }
 
         .signature {
@@ -68,11 +69,12 @@
             font-style: italic;
             border-top: 1px solid #eee;
             padding-top: 20px;
+            color: var(--text-main);
         }
 
-        /* Subtle responsive tweak */
         @media (max-width: 480px) {
             .letter-card { padding: 30px; }
+            p { font-size: 16px; }
         }
     </style>
 </head>
@@ -82,21 +84,19 @@
         <div class="icon">✧</div>
         <h1>I Wanted to Say I'm Sorry</h1>
         
-        <p>Hi [Eve],</p>
+        <p>Hi Eve,</p>
         
-        <p>They said that when you cause a pain or hurt to your partner it stays forever, and I’ve been feeling that lately. I’m really sorry for the way I let things boil over.</p>
-
-​I know I hurt you when I finally blurted out all those unpleasant feelings at once. It wasn't fair of me to stay silent for so long, insisting everything was fine, only to dump everything on you the moment I snapped. You’ve always been kind enough to ask me what’s wrong, and instead of being honest with you then, I waited until I was frustrated to speak up.</p>
-
-​The things I said carried a weight they didn't need to have because I kept them bottled up. I’m so grateful that you check in on me, and I’m sorry I made you the target of my own inability to talk sooner.</p>
-
-I love you, and I want to work on being honest with you in the moment, rather than letting things get to that point again.</p>
+        <p>They said that when you cause pain or hurt to your partner, it stays forever, and I’ve been feeling that lately. I’m really sorry for the way I let things boil over.</p>
         
+        <p>I know I hurt you when I finally blurted out all those unpleasant feelings at once. It wasn't fair of me to stay silent for so long, insisting everything was fine, only to dump everything on you the moment I snapped. You’ve always been kind enough to ask me what’s wrong, and instead of being honest with you then, I waited until I was frustrated to speak up.</p>
         
+        <p>The things I said carried a weight they didn't need to have because I kept them bottled up. I’m so grateful that you check in on me, and I’m sorry I made you the target of my own inability to talk sooner.</p>
+        
+        <p>I love you, and I want to work on being honest with you in the moment, rather than letting things get to that point again.</p>
 
         <div class="signature">
             Best,<br>
-            [Nerwin]
+            Nerwin
         </div>
     </div>
 
