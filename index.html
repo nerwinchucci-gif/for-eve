@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message for You</title>
+    <style>
+        :root {
+            --bg-color: #fffafb; /* Soft warm white */
+            --text-main: #4a4a4a;
+            --accent: #d1a7a7; /* Dusty rose accent */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif; /* Serif font feels more like a letter */
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Entrance Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .letter-card {
+            background: white;
+            padding: 50px;
+            max-width: 500px;
+            width: 90%;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            animation: fadeIn 1.2s ease-out forwards;
+            position: relative;
+            border: 1px solid #f0f0f0;
+        }
+
+        .icon {
+            text-align: center;
+            font-size: 24px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: var(--text-main);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        .signature {
+            margin-top: 40px;
+            font-style: italic;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* Subtle responsive tweak */
+        @media (max-width: 480px) {
+            .letter-card { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letter-card">
+        <div class="icon">✧</div>
+        <h1>I Wanted to Say I'm Sorry</h1>
+        
+        <p>Hi [Eve],</p>
+        
+        <p>They said that when you cause a pain or hurt to your partner it stays forever, and I’ve been feeling that lately. I’m really sorry for the way I let things boil over.</p>
+
+​I know I hurt you when I finally blurted out all those unpleasant feelings at once. It wasn't fair of me to stay silent for so long, insisting everything was fine, only to dump everything on you the moment I snapped. You’ve always been kind enough to ask me what’s wrong, and instead of being honest with you then, I waited until I was frustrated to speak up.</p>
+
+​The things I said carried a weight they didn't need to have because I kept them bottled up. I’m so grateful that you check in on me, and I’m sorry I made you the target of my own inability to talk sooner.</p>
+
+I love you, and I want to work on being honest with you in the moment, rather than letting things get to that point again.</p>
+        
+        
+
+        <div class="signature">
+            Best,<br>
+            [Nerwin]
+        </div>
+    </div>
+
+</body>
+</html>
